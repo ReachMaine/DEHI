@@ -1,0 +1,58 @@
+/*
+Theme Name: Down East Horizons
+Description: This is a child theme for dehi.org
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.0
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+
+ 
+/* =Theme customization starts here */
+
+/* blog posts listing */
+ul.blog-posts {
+	li.ux-box {
+		.inner-wrap {
+		border-width: 2px;
+			.ux-box-text {
+				h3.from_the_blog_title {
+					margin: 0px;
+				}
+				.tx-div {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+.ecs-event-list {
+    h4 {
+    	margin-bottom: 0px;
+    }
+    li:not(:first-child) h4{
+    	margin-top: 0.5em;
+    }
+}
+
+ul.ecs-event-list {
+	list-style: none;
+	margin-left: 0px;
+
+}
+
+/******* these should stay at bottom of this file **********/
+@import "partials/print"; 

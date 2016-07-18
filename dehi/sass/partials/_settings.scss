@@ -1,0 +1,38 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #a62425;
+$titleFontColor: #a62425;
+$facebook_blue: #3a589d;
+$reach_orange:  #f58220; 
+// Background colors: 
+
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$flat-primary-color:  #004DB2; // set in theme options -> style & colors;
+$flat-secondary-color: #2f68b3; // set in theme options -> style & colors;
+/* Typography ------------------------------------------ */
+/* general */
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+	position: relative;
+	padding-bottom: 50.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 1em;
+	iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	}
+}
+/* ------------------ Reach Branding ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 3px;
+}

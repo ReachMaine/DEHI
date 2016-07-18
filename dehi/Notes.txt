@@ -1,0 +1,8 @@
+
+	
+When updated from flatsome 1.x to 2.0, 
+	may need to re-copy the header.php, mobile menu seems to done differently.
+	
+If no variables from variable products, try renaming 
+	flatsome/woocommerce/add-to-cart/variable.php (old version of this)
+	

@@ -1,0 +1,47 @@
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 48em) {
+}
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears.
+	#masthead {
+		height: inherit!important;
+		.header-container {
+			display: block;
+		}
+		#right-logo-phone{
+			display: block;
+			.eai-right-image {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				float: none;
+			}		
+		}
+
+	}
+
+}
+
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+}
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+	}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	}
+/* breakpoints for ux_banners */
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (min-width: 600px) {
+}

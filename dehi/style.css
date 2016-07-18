@@ -1,0 +1,50 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: Down East Horizons
+Description: This is a child theme for dehi.org
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.0
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* general */
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .ea-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* ------------------ Reach Branding ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+/* =Theme customization starts here */
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+/******* these should stay at bottom of this file **********/
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
