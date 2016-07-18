@@ -34,6 +34,20 @@ Version: 2.0
   padding-right: 3px; }
 
 /* =Theme customization starts here */
+.block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row {
+  max-width: 100% !important;
+  width: 100%; }
+  .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row .inner.bottom {
+    width: 100% !important;
+    bottom: 0% !important; }
+    .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row .inner.bottom .inner-wrap {
+      box-shadow: none; }
+    .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row .inner.bottom h2.dehi-shadow {
+      text-shadow: 1px 2px #7a7a7a; }
+
+.row.container.boxed .column-inner {
+  border-radius: 20px; }
+
 /* blog posts listing */
 ul.blog-posts li.ux-box .inner-wrap {
   border-width: 2px; }

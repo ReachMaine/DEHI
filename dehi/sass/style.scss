@@ -13,6 +13,42 @@ Version: 2.0
  
 /* =Theme customization starts here */
 
+// header
+
+// homepage stuff
+.block-html-after-header {
+	.ux-slider-wrapper {
+		.ux-slider {
+			.ux_banner {
+				.row {
+					max-width: 100%!important;
+					width: 100%;
+					.inner.bottom {
+
+						width:100%!important;
+						bottom: 0%!important;
+						.inner-wrap {
+							box-shadow: none;
+						}
+						h2.dehi-shadow {
+							text-shadow: 1px 2px #7a7a7a;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+
+}
+// round the boxed content
+	.row.container.boxed  {
+		.column-inner {
+			border-radius: 20px;
+		}
+	}
+
+
 /* blog posts listing */
 ul.blog-posts {
 	li.ux-box {
