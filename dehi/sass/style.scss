@@ -14,7 +14,31 @@ Version: 2.0
 /* =Theme customization starts here */
 
 // header
-
+body #masthead {
+	//background-color: transparentize($masthead-background, 0.6); // gives 0.4 opacity
+	.header-container {
+		display: flex;
+		//padding-top: 7px;// moved to meda only on desktop
+		#logo {
+			a img {
+				max-height: 300px;
+			}
+		}
+	}
+	.right-links {
+		vertical-align: initial;
+		> ul {
+			padding-top: 30px;
+		}
+		.social-icons .icon.icon_facebook {
+			background-color: $facebook_blue;
+		}
+	}
+	
+}
+#masthead.stuck.move_down #logo a img {
+	//max-height: 200px!important;
+}
 // homepage stuff
 .block-html-after-header {
 	.ux-slider-wrapper {
@@ -92,3 +116,4 @@ ul.ecs-event-list {
 
 /******* these should stay at bottom of this file **********/
 @import "partials/print"; 
+@import "partials/media";

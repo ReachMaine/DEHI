@@ -5,13 +5,18 @@
 
 /* Foundation Block Grids for above small breakpoint */
 @media only screen and (min-width: 48em) {
+	.header-container {
+		padding-top: 7px;
+	}
 }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears.
 	#masthead {
 		height: inherit!important;
 		.header-container {
-			display: block;
+			//display: block;
+			padding-bottom: 7px;
+			padding-bottom: 0px;
 		}
 		#right-logo-phone{
 			display: block;
@@ -22,6 +27,9 @@
 			}		
 		}
 
+	}
+	#main-content {
+		//padding-top: 50px;
 	}
 
 }

@@ -25,6 +25,9 @@ Version: 2.0
     width: 100%;
     height: 100%; }
 
+a.button {
+  text-transform: none !important; }
+
 /* ------------------ Reach Branding ---------------------*/
 /* used with reach branding, usually in copyright footer.
 <a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
@@ -34,6 +37,17 @@ Version: 2.0
   padding-right: 3px; }
 
 /* =Theme customization starts here */
+body #masthead .header-container {
+  display: flex; }
+  body #masthead .header-container #logo a img {
+    max-height: 300px; }
+body #masthead .right-links {
+  vertical-align: initial; }
+  body #masthead .right-links > ul {
+    padding-top: 30px; }
+  body #masthead .right-links .social-icons .icon.icon_facebook {
+    background-color: #3a589d; }
+
 .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row {
   max-width: 100% !important;
   width: 100%; }
@@ -79,3 +93,28 @@ ul.ecs-event-list {
 @media print {
   body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
     content: ""; } }
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 48em) {
+  .header-container {
+    padding-top: 7px; } }
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  #masthead {
+    height: inherit !important; }
+    #masthead .header-container {
+      padding-bottom: 7px;
+      padding-bottom: 0px; }
+    #masthead #right-logo-phone {
+      display: block; }
+      #masthead #right-logo-phone .eai-right-image {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */

@@ -17,9 +17,9 @@ global $flatsome_opt;
 	</header><!-- .entry-header -->
 	
 
-	<?php if ( has_post_thumbnail() && get_post_meta($post->ID, 'show_post_thumb', true)!='Disable')  ) { // check if the post has a Post Thumbnail assigned to it. ?>
+	<?php if ( has_post_thumbnail() && get_post_meta($post->ID, 'show_post_thumb', true) !='Disable' )  { // check if the post has a Post Thumbnail assigned to it. ?>
     <div class="entry-image">
-    		<?php if($flatsome_opt['blog_parallax']) { ?><div class="parallax_img" style="overflow:hidden"><div class="parallax_img_inner" data-velocity="0.15"><?php } ?>
+    		<?php if($flatsome_opt['blog_parallax']) { ?><div class="parallax_img has-parallax" style="overflow:hidden"><div class="parallax_img_inner" data-velocity="0.15"><?php } ?>
             <?php the_post_thumbnail('large'); ?>
             <?php if($flatsome_opt['blog_parallax']) { ?></div></div><?php } ?>
             <div class="post-date large">
@@ -82,24 +82,23 @@ global $flatsome_opt;
 				<div class="row">
 					<div class="large-2 small-3 columns">
 						<?php 
-
-						$user = get_the_author_meta('ID');
-						echo get_avatar($user,90); 
-
+							$user = get_the_author_meta('ID');
+							echo get_avatar($user,90); 
 						?>
-					
 					</div>
 					<div class="large-10 small-9 columns">
-					<h4 class="author-name"><?php _e('by','flatsome') ?> <?php echo get_the_author_meta('display_name');?></h4>
+					<h6 class="author-name uppercase">
+						<?php echo esc_html( get_the_author_meta( 'display_name' ) );?>
+					</h6>
 					
 					<?php if(get_the_author_meta('yim')){?>
-					<p class="author-title"><?php echo get_the_author_meta('yim'); ?></p>
+					<p class="author-title"><?php echo esc_html(get_the_author_meta('yim')); ?></p>
 					<?php }?>
 
-					<p class="author-desc"><?php echo get_the_author_meta('user_description');?></p>
+					<p class="author-desc"><?php echo esc_html(get_the_author_meta('description'));?></p>
 
 					<?php if(get_the_author_meta('aim')){?>
-					<p class="author-twitter"><a href="http://twitter.com/<?php echo get_the_author_meta('aim');?>"><?php echo get_the_author_meta('aim');?></a></p>
+					<p class="author-twitter"><a href="http://twitter.com/<?php echo get_the_author_meta('aim');?>"><?php echo esc_html(get_the_author_meta('aim'));?></a></p>
 					<?php }?>
 					</div>
 				</div>
