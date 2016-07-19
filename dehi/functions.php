@@ -1,5 +1,6 @@
 <?php
 	require_once(get_stylesheet_directory().'/custom/language.php'); 
+	require_once(get_stylesheet_directory().'/custom/flat.php'); 
 	// require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
 
 

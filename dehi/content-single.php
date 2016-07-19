@@ -2,7 +2,7 @@
 /**
  * @package flatsome
  */
- /* zig:  add option to not display thumbnail based on custom field show_post_thumb */
+ /* zig:  add option to not display thumbnail based on custom field reach_disable_thumb */
 
 global $flatsome_opt;
 ?>
@@ -17,7 +17,7 @@ global $flatsome_opt;
 	</header><!-- .entry-header -->
 	
 
-	<?php if ( has_post_thumbnail() && get_post_meta($post->ID, 'show_post_thumb', true) !='Disable' )  { // check if the post has a Post Thumbnail assigned to it. ?>
+	<?php if ( has_post_thumbnail() && get_post_meta($post->ID, 'reach_disable_thumb', true) !='yes' )  { // check if the post has a Post Thumbnail assigned to it. ?>
     <div class="entry-image">
     		<?php if($flatsome_opt['blog_parallax']) { ?><div class="parallax_img has-parallax" style="overflow:hidden"><div class="parallax_img_inner" data-velocity="0.15"><?php } ?>
             <?php the_post_thumbnail('large'); ?>
