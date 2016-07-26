@@ -32,7 +32,9 @@ $masthead-background: #fbcfaa; // also set in theme options -> header
 .dehi-center {
 	text-align: center;
 }
-a.button {
+a.button,
+.message-box,
+.message-box p {
 	text-transform: none!important;
 }
 /* ------------------ Reach Branding ---------------------*/

@@ -9,6 +9,7 @@ Version: 2.0
  
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
+@import "partials/cf7";
 
  
 /* =Theme customization starts here */
@@ -70,6 +71,9 @@ body #masthead {
 		.column-inner {
 			border-radius: 20px;
 		}
+	}
+	.ux-section.boxed {
+		border-radius: 20px;
 	}
 
 

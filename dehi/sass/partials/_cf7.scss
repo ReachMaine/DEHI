@@ -1,0 +1,56 @@
+/* --------- Contact form 7 styling --------------*/
+.wpcf7 {  // the containing div 
+	.wpcf7-form { // the form
+		dl {
+			//display: inline;	
+			dt {
+				display: inline-block;
+				text-align: right;
+				min-width: 110px;
+				margin-top: 0px;
+				font-size: 15px; //zig:  26jun15 - trying to fix firefox display 
+				width: 145px;//zig:  26jun15
+			}
+			dd {
+				//margin-top: -1px;
+				padding-left: 10px;
+				display: inline-block;
+				//width: 80%; //zig:  26jun15
+				min-width: 50%; //zig:  26jun15
+				.your-message {
+					margin-top: 1px;
+				}
+				h6 { // 
+					margin-bottom: 10px;
+					margin-top: 20px;
+					line-height: initial;
+					font-weight: bold;
+					font-size: 1.1em;
+				}
+				textarea {
+					height: inherit;
+				}
+			}
+			dd.mdih-inline {
+				.wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio {				
+					.wpcf7-list-item {
+						display: inline-block;
+						padding-right: 15px;
+					}
+				}
+			}
+		} // end dl
+	} // end form
+}
+@media screen and (max-width: 767px) {//zig:  26jun15
+	.wpcf7 .wpcf7-form {
+		dl {
+			dt {
+				width: 100%;
+				text-align: left;
+			}
+
+		}
+	}
+}
+/* --------- End Contact form 7  --------------*/

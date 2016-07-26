@@ -28,7 +28,9 @@ Version: 2.0
 .dehi-center {
   text-align: center; }
 
-a.button {
+a.button,
+.message-box,
+.message-box p {
   text-transform: none !important; }
 
 /* ------------------ Reach Branding ---------------------*/
@@ -39,6 +41,37 @@ a.button {
   content: url("images/reach-favicon.png");
   padding-right: 3px; }
 
+/* --------- Contact form 7 styling --------------*/
+.wpcf7 .wpcf7-form dl dt {
+  display: inline-block;
+  text-align: right;
+  min-width: 110px;
+  margin-top: 0px;
+  font-size: 15px;
+  width: 145px; }
+.wpcf7 .wpcf7-form dl dd {
+  padding-left: 10px;
+  display: inline-block;
+  min-width: 50%; }
+  .wpcf7 .wpcf7-form dl dd .your-message {
+    margin-top: 1px; }
+  .wpcf7 .wpcf7-form dl dd h6 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: initial;
+    font-weight: bold;
+    font-size: 1.1em; }
+  .wpcf7 .wpcf7-form dl dd textarea {
+    height: inherit; }
+.wpcf7 .wpcf7-form dl dd.mdih-inline .wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+  display: inline-block;
+  padding-right: 15px; }
+
+@media screen and (max-width: 767px) {
+  .wpcf7 .wpcf7-form dl dt {
+    width: 100%;
+    text-align: left; } }
+/* --------- End Contact form 7  --------------*/
 /* =Theme customization starts here */
 body #masthead .header-container {
   display: flex; }
@@ -63,6 +96,9 @@ body #masthead .right-links {
       text-shadow: 1px 2px #7a7a7a; }
 
 .row.container.boxed .column-inner {
+  border-radius: 20px; }
+
+.ux-section.boxed {
   border-radius: 20px; }
 
 /* blog posts listing */
