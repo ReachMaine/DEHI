@@ -125,6 +125,10 @@ ul.ecs-event-list {
   list-style: none;
   margin-left: 0px; }
 
+/*** footer ****/
+footer .footer.footer2 form .paypal-donations br {
+  display: none; }
+
 /******* these should stay at bottom of this file **********/
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
