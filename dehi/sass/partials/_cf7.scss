@@ -1,8 +1,12 @@
 /* --------- Contact form 7 styling --------------*/
 .wpcf7 {  // the containing div 
 	.wpcf7-form { // the form
+		.row.container {
+			margin-bottom: 0px!important;
+		}
 		dl {
 			//display: inline;	
+			margin-bottom: 0px;
 			dt {
 				display: inline-block;
 				text-align: right;

@@ -68,4 +68,16 @@
 	function wrap_embed_with_div($html, $url, $attr) {
         return '<div class="ea-responsive-container">'.$html.'</div>';
 }
+
+
+// add widget area for foundation pages.
+ register_sidebar( array(
+    'name'          => 'Foundation Header',
+    'id'            => 'dehi-foundation-header',
+    'description' 	=> 'Above Foundation Pages content',
+    'before_widget' => '<div id="dehi-foundation" class="dehi-foundation-header widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widget-title shop-sidebar">',
+    'after_title'   => '</h3>',
+  ) );
 ?>
