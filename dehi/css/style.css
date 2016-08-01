@@ -10,7 +10,6 @@ Version: 2.0
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* general */
-/* responsive video embed zig 10May16 */
 .ea-responsive-container {
   position: relative;
   padding-bottom: 50.25%;
@@ -18,12 +17,13 @@ Version: 2.0
   height: 0;
   overflow: hidden;
   margin-bottom: 1em; }
-  .ea-responsive-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+
+.ea-responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .dehi-center {
   text-align: center; }
@@ -42,30 +42,34 @@ a.button,
   padding-right: 3px; }
 
 /* --------- Contact form 7 styling --------------*/
-.wpcf7 .wpcf7-form dl dt {
-  display: inline-block;
-  text-align: right;
-  min-width: 110px;
-  margin-top: 0px;
-  font-size: 15px;
-  width: 145px; }
-.wpcf7 .wpcf7-form dl dd {
-  padding-left: 10px;
-  display: inline-block;
-  min-width: 50%; }
-  .wpcf7 .wpcf7-form dl dd .your-message {
-    margin-top: 1px; }
-  .wpcf7 .wpcf7-form dl dd h6 {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    line-height: initial;
-    font-weight: bold;
-    font-size: 1.1em; }
-  .wpcf7 .wpcf7-form dl dd textarea {
-    height: inherit; }
-.wpcf7 .wpcf7-form dl dd.mdih-inline .wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
-  display: inline-block;
-  padding-right: 15px; }
+.wpcf7 .wpcf7-form .row.container {
+  margin-bottom: 0px !important; }
+.wpcf7 .wpcf7-form dl {
+  margin-bottom: 0px; }
+  .wpcf7 .wpcf7-form dl dt {
+    display: inline-block;
+    text-align: right;
+    min-width: 110px;
+    margin-top: 0px;
+    font-size: 15px;
+    width: 145px; }
+  .wpcf7 .wpcf7-form dl dd {
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 50%; }
+    .wpcf7 .wpcf7-form dl dd .your-message {
+      margin-top: 1px; }
+    .wpcf7 .wpcf7-form dl dd h6 {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      line-height: initial;
+      font-weight: bold;
+      font-size: 1.1em; }
+    .wpcf7 .wpcf7-form dl dd textarea {
+      height: inherit; }
+  .wpcf7 .wpcf7-form dl dd.mdih-inline .wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+    display: inline-block;
+    padding-right: 15px; }
 
 @media screen and (max-width: 767px) {
   .wpcf7 .wpcf7-form dl dt {
@@ -94,6 +98,11 @@ body #masthead .right-links {
       box-shadow: none; }
     .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row .inner.bottom h2.dehi-shadow {
       text-shadow: 1px 2px #7a7a7a; }
+
+#dehi-foundation img {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto; }
 
 .row.container.boxed .column-inner {
   border-radius: 20px; }
