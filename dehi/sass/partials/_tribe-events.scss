@@ -1,21 +1,28 @@
 /* styling for tribe events...
 */
- .tribe-events-abbr.updated {
-	display: block;
-}
-.tribe-events-list .tribe-events-event-cost { // cost on listview
-	float: left;
-	margin-left: 0px;
-	margin-top:10px;
-}
-
-.tribe-events-single-section.tribe-events-event-meta  .tribe-events-meta-group.tribe-events-meta-group-details,
-.tribe-events-single-section.tribe-events-event-meta  .tribe-events-meta-group.tribe-events-meta-group-organizer
- {
-	width: 50%; 
-}
-.column.tribe-week-grid-hours { // s.t. week events dont show at bottom of time slots.
-	width: 40px;
-}
 
 
+#tribe-events .tribe-events-button, 
+#tribe-events .tribe-events-button:hover, 
+#tribe_events_filters_wrapper input[type=submit], 
+.tribe-events-button, 
+.tribe-events-button.tribe-active:hover, 
+.tribe-events-button.tribe-inactive, 
+.tribe-events-button:hover, 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+	background-color: $flat-primary-color;
+}
+
+#tribe-events-content .tribe-events-tooltip h4, 
+#tribe_events_filters_wrapper .tribe_events_slider_val, 
+.single-tribe_events a.tribe-events-gcal, 
+.single-tribe_events a.tribe-events-ical {
+	color: $flat-primary-color;
+}
+
+.tribe_events {
+	a {
+		color: $flat-primary-color;
+	}
+}

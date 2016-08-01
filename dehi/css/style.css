@@ -76,6 +76,28 @@ a.button,
     width: 100%;
     text-align: left; } }
 /* --------- End Contact form 7  --------------*/
+/* styling for tribe events...
+*/
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type=submit],
+.tribe-events-button,
+.tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive,
+.tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a {
+  background-color: #134b9d; }
+
+#tribe-events-content .tribe-events-tooltip h4,
+#tribe_events_filters_wrapper .tribe_events_slider_val,
+.single-tribe_events a.tribe-events-gcal,
+.single-tribe_events a.tribe-events-ical {
+  color: #134b9d; }
+
+.tribe_events a {
+  color: #134b9d; }
+
 /* =Theme customization starts here */
 body #masthead .header-container {
   display: flex; }
