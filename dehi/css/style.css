@@ -105,10 +105,21 @@ body #masthead .header-container {
     max-height: 300px; }
 body #masthead .right-links {
   vertical-align: initial; }
-  body #masthead .right-links > ul {
+  body #masthead .right-links > ul.header-nav {
     padding-top: 30px; }
-  body #masthead .right-links .social-icons .icon.icon_facebook {
-    background-color: #3a589d; }
+    body #masthead .right-links > ul.header-nav > li a {
+      text-transform: none; }
+    body #masthead .right-links > ul.header-nav > li a.nav-top-link {
+      font-size: 100%; }
+    body #masthead .right-links > ul.header-nav li .nav-dropdown li a {
+      font-size: 90%; }
+
+.social-icons .icon.icon_facebook {
+  background-color: #3a589d; }
+
+.mobile-sidebar li a {
+  text-transform: none;
+  font-size: 90%; }
 
 .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row {
   max-width: 100% !important;

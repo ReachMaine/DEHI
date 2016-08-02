@@ -29,14 +29,29 @@ body #masthead {
 	}
 	.right-links {
 		vertical-align: initial;
-		> ul {
+		> ul.header-nav {  // header navigation
 			padding-top: 30px;
+			> li a {
+				
+				text-transform: none;
+			}
+			> li a.nav-top-link {
+				font-size: 100%;
+			}
+			li .nav-dropdown li a { 
+				font-size: 90%;
+			} 
 		}
-		.social-icons .icon.icon_facebook {
-			background-color: $facebook_blue;
-		}
+		
 	}
 	
+}
+.social-icons .icon.icon_facebook {
+	background-color: $facebook_blue;
+}
+.mobile-sidebar li a {
+	text-transform: none;
+	font-size: 90%;
 }
 #masthead.stuck.move_down #logo a img {
 	//max-height: 200px!important;
@@ -77,6 +92,7 @@ body #masthead {
 		margin: auto;
 	}
 }
+// foundation page styling...
 #dehi-foundation-side {
 	background-color: $doundation-sidebar-bkgd;
 	border: 1px solid grey;
