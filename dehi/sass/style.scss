@@ -140,7 +140,16 @@ ul.blog-posts {
 			}
 		}
 	}
+	div.inner div.inner-wrap a {
+		width: 80%;
+	}
 }
+
+h2.reach_post_title { //Styling cancellation titles
+	text-align: center;
+	color: red;
+}
+
 .from_the_blog_comments { // hide comments on blog shortcode 
 	display: none;
 	visibility: hidden;
