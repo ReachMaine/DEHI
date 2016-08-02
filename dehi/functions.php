@@ -5,7 +5,7 @@
 	// require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
 
 
-	add_action('after_setup_theme', ea_setup);
+	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
 	* 
@@ -14,7 +14,8 @@
 	 /* do stuff ehre. */
 	 /* add_filter( 'image_size_names_choose', 'ea_custom_sizes' ); // choose image size in media drop down. */
 		//reach_woo_setup();
-	 
+	    remove_shortcode('blog_posts');
+	    add_shortcode('blog_posts', 'reach_blog_posts');
 	}
 	add_image_size('reach_featured_image', 750, 350, false);
 	function ea_custom_sizes( $sizes ) {
