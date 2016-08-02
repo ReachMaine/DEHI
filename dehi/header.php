@@ -2,7 +2,8 @@
 <?php /* 
 mods:  7July16 zig - add GTM function after body tag
 			- use the html_after_header option only on the home page.
-*/ ?>
+		2Aug16 zig - add google font for foundation pages. = libre-baskerville bold & reg.
+*/ ?>		
 <?php global $woo_options, $woocommerce, $flatsome_opt;?>
 <!--[if lte IE 9 ]><html class="ie lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes(); ?>> <!--<![endif]-->
@@ -11,7 +12,7 @@ mods:  7July16 zig - add GTM function after body tag
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 

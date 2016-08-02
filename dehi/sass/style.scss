@@ -69,13 +69,34 @@ body #masthead {
 }
 
 // foundation page header 
-#dehi-foundation {
+#dehi-foundation { // page header 
 	//background-color: red;
 	img {
 		width: 100%;
 		max-width: 1920px;
 		margin: auto;
 	}
+}
+#dehi-foundation-side {
+	background-color: $doundation-sidebar-bkgd;
+	border: 1px solid grey;
+	padding: 25px;
+	.widget_nav_menu ul li  {
+		text-transform: none;
+	}
+
+}
+#content.dehi-foundation, #dehi-foundation-side {
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Libre Baskerville', serif;
+		font-weight: 700;
+		text-transform: none;
+	}
+	p, ul li, ol li, .widget_nav_menu ul li {
+		font-family: 'Libre Baskerville', serif;
+	}
+
+	
 }
 // round the boxed content
 	.row.container.boxed  {

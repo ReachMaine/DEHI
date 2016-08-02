@@ -126,6 +126,20 @@ body #masthead .right-links {
   max-width: 1920px;
   margin: auto; }
 
+#dehi-foundation-side {
+  background-color: #ffd79b;
+  border: 1px solid grey;
+  padding: 25px; }
+  #dehi-foundation-side .widget_nav_menu ul li {
+    text-transform: none; }
+
+#content.dehi-foundation h1, #content.dehi-foundation h2, #content.dehi-foundation h3, #content.dehi-foundation h4, #content.dehi-foundation h5, #content.dehi-foundation h6, #dehi-foundation-side h1, #dehi-foundation-side h2, #dehi-foundation-side h3, #dehi-foundation-side h4, #dehi-foundation-side h5, #dehi-foundation-side h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  text-transform: none; }
+#content.dehi-foundation p, #content.dehi-foundation ul li, #content.dehi-foundation ol li, #content.dehi-foundation .widget_nav_menu ul li, #dehi-foundation-side p, #dehi-foundation-side ul li, #dehi-foundation-side ol li, #dehi-foundation-side .widget_nav_menu ul li {
+  font-family: 'Libre Baskerville', serif; }
+
 .row.container.boxed .column-inner {
   border-radius: 20px; }
 

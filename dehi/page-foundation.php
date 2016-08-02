@@ -30,7 +30,7 @@ get_header(); ?>
 	</div><!-- .page-inner -->
 </div><!-- end #content large-9 left -->
 
-<div class="large-3 columns left">
+<div id="dehi-foundation-side" class="large-3 columns left">
 <?php get_sidebar(); ?>
 </div><!-- end sidebar -->
 
