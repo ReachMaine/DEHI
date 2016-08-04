@@ -37,6 +37,9 @@
 /* Medium Displays: 768px - 1279px */
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 48em) {
+	h1.entry-title {
+		padding-top: 34px; //page titles clearing logo on desktop
+	}
 }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
