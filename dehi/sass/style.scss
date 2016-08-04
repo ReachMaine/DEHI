@@ -175,12 +175,26 @@ ul.ecs-event-list {
 
 }
 /*** footer ****/
+footer .footer.footer-1 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,13439b+100 */
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 0%, #13439b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7db9e8 0%,#13439b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7db9e8 0%,#13439b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#13439b',GradientType=0 ); /* IE6-9 */
+	.widget.widget_text {
+		margin-bottom: 0px;
+	}	
+}
 footer .footer.footer2 {
 	form .paypal-donations {
 		br {
 			display: none; // not working, but leaving JIC
 		}
 	}
+}
+footer .absolute-footer {
+	padding-bottom: 15px;
 }
 
 /******* these should stay at bottom of this file **********/
