@@ -78,7 +78,18 @@
     'description' 	=> 'Above Foundation Pages content',
     'before_widget' => '<div id="dehi-foundation" class="dehi-foundation-header widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widget-title shop-sidebar">',
-    'after_title'   => '</h3>',
+    'before_title'  => '<!--', // dont show widget title
+    'after_title'   => '-->',
+  ) );
+
+ // add widget area for full boxed page template
+ register_sidebar( array(
+    'name'          => 'Page Header',
+    'id'            => 'dehi-page-header',
+    'description' 	=> 'Above Pages content',
+    'before_widget' => '<div id="dehi-page-header" class="dehi-page-header widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<!--',
+    'after_title'   => '-->',
   ) );
 ?>

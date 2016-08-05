@@ -151,6 +151,20 @@ body #masthead .right-links {
 #content.dehi-foundation p, #content.dehi-foundation ul li, #content.dehi-foundation ol li, #content.dehi-foundation .widget_nav_menu ul li, #dehi-foundation-side p, #dehi-foundation-side ul li, #dehi-foundation-side ol li, #dehi-foundation-side .widget_nav_menu ul li {
   font-family: 'Libre Baskerville', serif; }
 
+#main-content .dehi-page-header.widget {
+  margin-bottom: 0px !important; }
+
+#main-content .dehi-content-container {
+  background-color: #d0e4ef; }
+  #main-content .dehi-content-container .row.container {
+    background-color: white;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px; }
+
 .row.container.boxed .column-inner {
   border-radius: 20px; }
 
@@ -175,17 +189,9 @@ h2.reach_post_title {
   display: none;
   visibility: hidden; }
 
+/**** sidebar ****/
 aside.widget.widget_recent_entries li {
   padding-bottom: 15px; }
-
-.ecs-event-list h4 {
-  margin-bottom: 0px; }
-.ecs-event-list li:not(:first-child) h4 {
-  margin-top: 0.5em; }
-
-ul.ecs-event-list {
-  list-style: none;
-  margin-left: 0px; }
 
 /*** footer ****/
 footer .footer.footer-1 {

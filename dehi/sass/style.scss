@@ -112,8 +112,25 @@ body #masthead {
 		font-family: 'Libre Baskerville', serif;
 	}
 
-	
 }
+#main-content .dehi-page-header.widget {
+	margin-bottom: 0px!important;
+}
+#main-content .dehi-content-container {
+	background-color: $site-background; //#fee9c9; 
+	.row.container {
+		background-color: $bkgoundContent;
+		// move beathing room into row (use padding instead of margin)
+		margin-top: 0px!important;
+		margin-bottom: 0px!important;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+
 // round the boxed content
 	.row.container.boxed  {
 		.column-inner {
@@ -154,26 +171,18 @@ h2.reach_post_title { //Styling cancellation titles
 	display: none;
 	visibility: hidden;
 }
+
+
+
+/**** sidebar ****/
+
 aside.widget.widget_recent_entries { // give recent entries some breathing room
 	li {
 		padding-bottom: 15px;
 	}
 }
 
-.ecs-event-list {
-    h4 {
-    	margin-bottom: 0px;
-    }
-    li:not(:first-child) h4{
-    	margin-top: 0.5em;
-    }
-}
 
-ul.ecs-event-list {
-	list-style: none;
-	margin-left: 0px;
-
-}
 /*** footer ****/
 footer .footer.footer-1 {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,13439b+100 */
