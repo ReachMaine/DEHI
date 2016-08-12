@@ -153,11 +153,14 @@ body #masthead .right-links {
   margin: auto; }
 
 #dehi-foundation-side {
-  background-color: #ffd79b;
+  background-color: #fff894;
   border: 1px solid grey;
   padding: 25px; }
   #dehi-foundation-side .widget_nav_menu ul li {
     text-transform: none; }
+    #dehi-foundation-side .widget_nav_menu ul li a {
+      border-color: #cacaca;
+      color: #757575; }
 
 #content.dehi-foundation h1, #content.dehi-foundation h2, #content.dehi-foundation h3, #content.dehi-foundation h4, #content.dehi-foundation h5, #content.dehi-foundation h6, #dehi-foundation-side h1, #dehi-foundation-side h2, #dehi-foundation-side h3, #dehi-foundation-side h4, #dehi-foundation-side h5, #dehi-foundation-side h6 {
   font-family: 'Libre Baskerville', serif;
@@ -194,10 +197,10 @@ body #masthead .right-links {
   border: 2px solid #fff; }
 
 .ux-section.boxed.dehi-yellow-bkg {
-  background-color: #b4ea8e; }
+  background-color: #fff894; }
 
 .ux-section.boxed.dehi-green-bkg {
-  background-color: #fcf923; }
+  background-color: #b4ea8e; }
 
 /* blog posts listing */
 ul.blog-posts li.ux-box .inner-wrap {

@@ -99,6 +99,10 @@ body #masthead {
 	padding: 25px;
 	.widget_nav_menu ul li  {
 		text-transform: none;
+		a {
+			border-color: #cacaca;
+			color: #757575;
+		}
 	}
 
 }
@@ -154,10 +158,11 @@ body #masthead {
 	}
 }
 .ux-section.boxed.dehi-yellow-bkg {
-	background-color: $dehi-green-bkgd;
+	background-color: $dehi-yellow-bkgd;
 }
 .ux-section.boxed.dehi-green-bkg {
-	background-color: $dehi-yellow-bkgd;
+	background-color: $dehi-green-bkgd;
+
 }
 
 /* blog posts listing */
