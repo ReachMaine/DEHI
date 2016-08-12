@@ -1,7 +1,19 @@
 /* styling for tribe events...
 */
+#tribe-events {
+	//add breathing space to top of calendar & events
+	padding-top: 50px;
+}
+
+.tribe-events-calendar thead th { // color of top header bar...i.e. Mon, tues....
+	background-color: $dehi-bright-green;
+}
+.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+	background-color: $dehi-med-green-bkgd;
+}
 
 
+#tribe-bar-form .tribe-bar-submit input[type=submit], // search button on month view
 #tribe-events .tribe-events-button, 
 #tribe-events .tribe-events-button:hover, 
 #tribe_events_filters_wrapper input[type=submit], 
@@ -14,6 +26,7 @@
 	background-color: $flat-primary-color;
 }
 
+.tribe-events-page-title, // page title
 #tribe-events-content .tribe-events-tooltip h4, 
 #tribe_events_filters_wrapper .tribe_events_slider_val, 
 .single-tribe_events a.tribe-events-gcal, 
@@ -25,4 +38,9 @@
 	a {
 		color: $flat-primary-color;
 	}
+}
+
+.tribe-events-single-section.tribe-events-event-meta {
+	border: 10px solid $dehi-green-bkgd;
+	border-radius: 15px;
 }

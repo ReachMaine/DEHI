@@ -78,6 +78,16 @@ a.button,
 /* --------- End Contact form 7  --------------*/
 /* styling for tribe events...
 */
+#tribe-events {
+  padding-top: 50px; }
+
+.tribe-events-calendar thead th {
+  background-color: #6ad61d; }
+
+.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+  background-color: #8cd077; }
+
+#tribe-bar-form .tribe-bar-submit input[type=submit],
 #tribe-events .tribe-events-button,
 #tribe-events .tribe-events-button:hover,
 #tribe_events_filters_wrapper input[type=submit],
@@ -89,6 +99,7 @@ a.button,
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a {
   background-color: #134b9d; }
 
+.tribe-events-page-title,
 #tribe-events-content .tribe-events-tooltip h4,
 #tribe_events_filters_wrapper .tribe_events_slider_val,
 .single-tribe_events a.tribe-events-gcal,
@@ -97,6 +108,10 @@ a.button,
 
 .tribe_events a {
   color: #134b9d; }
+
+.tribe-events-single-section.tribe-events-event-meta {
+  border: 10px solid #b4ea8e;
+  border-radius: 15px; }
 
 /* =Theme customization starts here */
 body #masthead .header-container {
@@ -170,6 +185,19 @@ body #masthead .right-links {
 
 .ux-section.boxed {
   border-radius: 20px; }
+
+.ux-section.boxed h3 a {
+  color: #45a600; }
+.ux-section.boxed h3 a:hover {
+  color: black; }
+.ux-section.boxed img {
+  border: 2px solid #fff; }
+
+.ux-section.boxed.dehi-yellow-bkg {
+  background-color: #b4ea8e; }
+
+.ux-section.boxed.dehi-green-bkg {
+  background-color: #fcf923; }
 
 /* blog posts listing */
 ul.blog-posts li.ux-box .inner-wrap {

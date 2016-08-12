@@ -141,6 +141,24 @@ body #masthead {
 		border-radius: 20px;
 	}
 
+// make green links in the yellow boxes.
+.ux-section.boxed {
+	h3 a {
+		color: $yellow-box-link;
+	}
+	h3 a:hover {
+		color: black;
+	}
+	img {
+		border: 2px solid #fff;
+	}
+}
+.ux-section.boxed.dehi-yellow-bkg {
+	background-color: $dehi-green-bkgd;
+}
+.ux-section.boxed.dehi-green-bkg {
+	background-color: $dehi-yellow-bkgd;
+}
 
 /* blog posts listing */
 ul.blog-posts {
