@@ -41,6 +41,10 @@ a.button,
   content: url("images/reach-favicon.png");
   padding-right: 3px; }
 
+.row.container {
+  margin-bottom: 0px !important;
+  padding-bottom: 30px; }
+
 /* --------- Contact form 7 styling --------------*/
 .wpcf7 .wpcf7-form .row.container {
   margin-bottom: 0px !important; }
@@ -114,6 +118,10 @@ a.button,
   border-radius: 15px; }
 
 /* =Theme customization starts here */
+body {
+  background: #d0e4ef;
+  color: #1c1c1c; }
+
 body #masthead .header-container {
   display: flex; }
   body #masthead .header-container #logo a img {
@@ -136,6 +144,12 @@ body #masthead .right-links {
   text-transform: none;
   font-size: 90%; }
 
+body #main-content {
+  background-color: #d0e4ef !important; }
+
+body.home.page #main-content {
+  background-color: #fff894 !important; }
+
 .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row {
   max-width: 100% !important;
   width: 100%; }
@@ -147,10 +161,26 @@ body #masthead .right-links {
     .block-html-after-header .ux-slider-wrapper .ux-slider .ux_banner .row .inner.bottom h2.dehi-shadow {
       text-shadow: 1px 2px #7a7a7a; }
 
+.dehi-front-donate-block {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,13439b+100 */
+  background: #7db9e8;
+  /* Old browsers */
+  background: -moz-linear-gradient(bottom, #7db9e8 0%, #13439b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #7db9e8 0%, #13439b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #7db9e8 0%, #13439b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13439b', endColorstr='#7db9e8',GradientType=0 );
+  /* IE6-9 */ }
+
 #dehi-foundation img {
   width: 100%;
   max-width: 1920px;
   margin: auto; }
+
+body.page-template-page-foundation #main-content {
+  background-color: white !important; }
 
 #dehi-foundation-side {
   background-color: #fff894;
@@ -174,8 +204,8 @@ body #masthead .right-links {
 
 #main-content .dehi-content-container {
   background-color: #d0e4ef; }
-  #main-content .dehi-content-container .row.container {
-    background-color: white;
+  #main-content .dehi-content-container > .row.container {
+    background-color: #d0e4ef;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     padding-top: 30px;
@@ -197,13 +227,25 @@ body #masthead .right-links {
   border: 2px solid #fff; }
 
 .ux-section.boxed.dehi-yellow-bkg {
-  background-color: #fff894; }
+  background-color: #fff894;
+  border: 1px solid white; }
+
+.ux-section.boxed.dehi-alt-yellow-bkg {
+  background-color: #f1f1f1;
+  border: 1px solid green; }
 
 .ux-section.boxed.dehi-green-bkg {
-  background-color: #b4ea8e; }
+  background-color: #b4ea8e;
+  border: 1px solid green; }
 
-/* blog posts listing */
+.columns.dehi-alt-green-bkg .column-inner,
+.row.dehi-alt-green-bkg .column-inner,
+.ux-section.boxed.dehi-alt-green-bkg .column-inner {
+  background-color: #cceed9 !important; }
+
+/* blog posts listing (homepage & archives for news, in the news...) */
 ul.blog-posts li.ux-box .inner-wrap {
+  background-color: #f1f1f1;
   border-width: 2px; }
   ul.blog-posts li.ux-box .inner-wrap .ux-box-text h3.from_the_blog_title {
     margin: 0px; }
@@ -211,6 +253,9 @@ ul.blog-posts li.ux-box .inner-wrap {
     display: none; }
 ul.blog-posts div.inner div.inner-wrap a {
   width: 80%; }
+
+body.single.single-post #main-content {
+  background-color: #d0e4ef !important; }
 
 h2.reach_post_title {
   text-align: center;

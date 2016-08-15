@@ -2,6 +2,8 @@
 // Font Colors
 $linkcolor: #a62425;
 $titleFontColor: #a62425;
+$bodyFontColor: #1c1c1c;
+$body-background: #d0e4ef;
 $facebook_blue: #3a589d;
 $reach_orange:  #f58220; 
 // Background colors: 
@@ -16,9 +18,12 @@ $site-background: #d0e4ef; //
 $yellow-box-link: #45a600;
 $dehi-green-bkgd: #b4ea8e; // color of green boxes
 $dehi-yellow-bkgd: #fff894; //#fcf923; // color of yellow boxes
+$dehi-alt-yellow-bkgd: #eded55;
 $dehi-footer-green: #6ad61d; // used on 2nd footer
 $dehi-bright-green: #6ad61d;
 $dehi-med-green-bkgd: #8cd077; // used for calendar day top bar.
+$dehi-light-green-bkgd: #cceed9;
+$hightlite-light: #f1f1f1;
 
 
 /* Typography ------------------------------------------ */
@@ -54,3 +59,7 @@ a.button,
 	padding-right: 3px;
 }
 
+.row.container {
+  margin-bottom: 0px!important;
+  padding-bottom: 30px;
+}

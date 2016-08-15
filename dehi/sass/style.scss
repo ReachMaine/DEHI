@@ -14,7 +14,10 @@ Version: 2.0
 
  
 /* =Theme customization starts here */
-
+body {
+  background: $body-background;
+  color: $bodyFontColor;
+}
 // header
 body #masthead {
 	//background-color: transparentize($masthead-background, 0.6); // gives 0.4 opacity
@@ -56,6 +59,17 @@ body #masthead {
 #masthead.stuck.move_down #logo a img {
 	//max-height: 200px!important;
 }
+body {
+	#main-content{
+		background-color: $body-background!important; // default 
+	}
+}
+body.home.page {
+	#main-content{
+		background-color: $dehi-yellow-bkgd!important;
+	} 
+}
+
 // homepage stuff
 .block-html-after-header {
 	.ux-slider-wrapper {
@@ -82,6 +96,16 @@ body #masthead {
 	}
 
 }
+// homepage donate section
+.dehi-front-donate-block {
+	// flipped from bottom
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,13439b+100 */
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(bottom, #7db9e8 0%, #13439b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(bottom, #7db9e8 0%,#13439b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top, #7db9e8 0%,#13439b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13439b', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
 
 // foundation page header 
 #dehi-foundation { // page header 
@@ -93,6 +117,11 @@ body #masthead {
 	}
 }
 // foundation page styling...
+body.page-template-page-foundation {
+	#main-content {
+		background-color: #FFF!important;
+	}
+}
 #dehi-foundation-side {
 	background-color: $doundation-sidebar-bkgd;
 	border: 1px solid grey;
@@ -122,8 +151,8 @@ body #masthead {
 }
 #main-content .dehi-content-container {
 	background-color: $site-background; //#fee9c9; 
-	.row.container {
-		background-color: $bkgoundContent;
+	>.row.container {
+		background-color: $site-background;;
 		// move beathing room into row (use padding instead of margin)
 		margin-top: 0px!important;
 		margin-bottom: 0px!important;
@@ -159,17 +188,31 @@ body #masthead {
 }
 .ux-section.boxed.dehi-yellow-bkg {
 	background-color: $dehi-yellow-bkgd;
+	border: 1px solid white;
+}
+.ux-section.boxed.dehi-alt-yellow-bkg { // no-longer yellow.
+	background-color: $hightlite-light;
+	border: 1px solid green;
 }
 .ux-section.boxed.dehi-green-bkg {
 	background-color: $dehi-green-bkgd;
+	border: 1px solid green;
 
 }
+.columns.dehi-alt-green-bkg,
+.row.dehi-alt-green-bkg,
+.ux-section.boxed.dehi-alt-green-bkg { // background around 
+	.column-inner {
+		background-color: $dehi-light-green-bkgd!important;
+	}
+}
 
-/* blog posts listing */
+/* blog posts listing (homepage & archives for news, in the news...) */
 ul.blog-posts {
 	li.ux-box {
 		.inner-wrap {
-		border-width: 2px;
+			background-color: $hightlite-light;
+			border-width: 2px;
 			.ux-box-text {
 				h3.from_the_blog_title {
 					margin: 0px;
@@ -184,6 +227,13 @@ ul.blog-posts {
 		width: 80%;
 	}
 }
+// single posts
+body.single.single-post{
+	#main-content {
+		background-color: $body-background!important;
+	}
+}
+
 
 h2.reach_post_title { //Styling cancellation titles
 	text-align: center;
@@ -194,6 +244,7 @@ h2.reach_post_title { //Styling cancellation titles
 	display: none;
 	visibility: hidden;
 }
+
 
 
 
