@@ -27,11 +27,13 @@ body #masthead {
 		#logo {
 			a img {
 				max-height: 300px;
+				width: 100%; // need for IE since image is SVG
 			}
 		}
 	}
 	.right-links {
 		vertical-align: initial;
+		display: block;
 		> ul.header-nav {  // header navigation
 			padding-top: 30px;
 			> li a {

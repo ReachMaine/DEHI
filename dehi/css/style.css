@@ -125,9 +125,11 @@ body {
 body #masthead .header-container {
   display: flex; }
   body #masthead .header-container #logo a img {
-    max-height: 300px; }
+    max-height: 300px;
+    width: 100%; }
 body #masthead .right-links {
-  vertical-align: initial; }
+  vertical-align: initial;
+  display: block; }
   body #masthead .right-links > ul.header-nav {
     padding-top: 30px; }
     body #masthead .right-links > ul.header-nav > li a {
