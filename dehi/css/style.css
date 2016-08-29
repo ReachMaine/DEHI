@@ -56,7 +56,8 @@ a.button,
     min-width: 110px;
     margin-top: 0px;
     font-size: 15px;
-    width: 145px; }
+    width: 145px;
+    vertical-align: top; }
   .wpcf7 .wpcf7-form dl dd {
     padding-left: 10px;
     display: inline-block;
