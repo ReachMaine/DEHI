@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<?php /* 
+<?php /*
 mods:  7July16 zig - add GTM function after body tag
 			- use the html_after_header option only on the home page.
 		2Aug16 zig - add google font for foundation pages. = libre-baskerville bold & reg.
-*/ ?>		
+*/ ?>
 <?php global $woo_options, $woocommerce, $flatsome_opt;?>
 <!--[if lte IE 9 ]><html class="ie lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes(); ?>> <!--<![endif]-->
@@ -13,12 +13,17 @@ mods:  7July16 zig - add GTM function after body tag
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://www.dehi.org/wp-content/themes/dehi/donate-button.js"></script>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
-<?php 
+<?php
 // HTML Homepage Before Header // Set in Theme Option > HTML Blocks
 if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro">'.do_shortcode($flatsome_opt['html_intro']).'</div>' ?>
 
@@ -51,14 +56,14 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 			                        <?php if(ux_is_woocommerce_active() && $flatsome_opt['myaccount_dropdown'] == 'top_bar') { ?>
 									<li class="account-dropdown menu-parent-item">
 										<?php
-										if ( is_user_logged_in() ) { ?> 
+										if ( is_user_logged_in() ) { ?>
 										<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="nav-top-link nav-top-login">
 											<?php _e('My Account', 'woocommerce'); ?>
 										</a>
 										<div class="nav-dropdown">
 											<ul>
 											<?php if ( has_nav_menu( 'my_account' ) ) { ?>
-											<?php  
+											<?php
 												wp_nav_menu(array(
 													'theme_location' => 'my_account',
 													'container'       => false,
@@ -78,7 +83,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											<?php } ?>
 											</ul>
 									</div><!-- end account dropdown -->
-								
+
 										<?php } else { ?>
 												<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"
 												class="nav-top-link nav-top-not-logged-in"
@@ -86,15 +91,15 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 													echo 'data-lightbox="#login-lightbox"';
 												}?>>
 												<?php _e('Login', 'woocommerce'); ?></a>
-										<?php } ?>						
+										<?php } ?>
 									</li>
 									<?php } // end My account dropdown ?>
 
 			                        <?php if(ux_is_woocommerce_active() && $flatsome_opt['show_cart'] == 'top_bar') { ?>
 									<li class="mini-cart-top-bar">
 											<a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>">
-												<strong ><?php _e('Cart', 'woocommerce'); ?></strong> 
-												<span>/ <?php echo $woocommerce->cart->get_cart_subtotal(); ?></span> 
+												<strong ><?php _e('Cart', 'woocommerce'); ?></strong>
+												<span>/ <?php echo $woocommerce->cart->get_cart_subtotal(); ?></span>
 												<span class="label"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
 											</a>
 									</li><!-- .mini-cart -->
@@ -113,19 +118,19 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 		</div><!-- .#top-bar -->
 		<?php }?>
 		<header id="masthead" class="site-header" role="banner">
-			<div class="row"> 
+			<div class="row">
 				<div class="large-12 columns header-container">
 					<div class="mobile-menu show-for-small">
 						<a href="#jPanelMenu" class="off-canvas-overlay" data-pos="left" data-color="light"><span class="icon-menu"></span></a>
 					</div><!-- end mobile menu -->
 
-					<?php if($flatsome_opt['logo_position'] == 'left') : ?> 
+					<?php if($flatsome_opt['logo_position'] == 'left') : ?>
 					<div id="logo" class="logo-left">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>" rel="home">
 							<?php if($flatsome_opt['site_logo']){
 								$site_title = esc_attr( get_bloginfo( 'name', 'display' ));
 								$logo_class = "";
-								if($flatsome_opt['site_logo_sticky']) {$logo_class = 'has_sticky_logo';} 
+								if($flatsome_opt['site_logo_sticky']) {$logo_class = 'has_sticky_logo';}
 
 								echo '<img src="'.$flatsome_opt['site_logo'].'" class="header_logo '.$logo_class.'" alt="'.$site_title.'"/>';
 								if ( is_page_template( 'page-transparent-header-light.php' )) {
@@ -145,7 +150,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 						<?php if(!isset($flatsome_opt['nav_position']) || $flatsome_opt['nav_position'] == 'top'){ ?>
 							<ul id="site-navigation" class="header-nav">
 								<?php if ( has_nav_menu( 'primary' ) ) : ?>
-								
+
 								<?php if (!isset($flatsome_opt['search_pos']) || $flatsome_opt['search_pos'] == 'left') { ?>
 								<li class="search-dropdown">
 									<a href="#" class="nav-top-link icon-search" onClick="return false;"></a>
@@ -154,12 +159,12 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>	
+										} ?>
 									</div><!-- .nav-dropdown -->
 								</li><!-- .search-dropdown -->
 								<?php } ?>
 
-									<?php  
+									<?php
 									wp_nav_menu(array(
 										'theme_location' => 'primary',
 										'container'       => false,
@@ -177,17 +182,17 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>		
+										} ?>
 									</div><!-- .nav-dropdown -->
 								</li><!-- .search-dropdown -->
 								<?php } ?>
 
 		                        <?php else: ?>
 		                            <li>Define your main navigation in <b>Appearance > Menus</b></li>
-		                        <?php endif; ?>								
+		                        <?php endif; ?>
 							</ul>
 						<?php } else if($flatsome_opt['nav_position'] == 'bottom' || $flatsome_opt['nav_position'] == 'bottom_center') { ?>
- 
+
 						<div class="wide-nav-search hide-for-small">
 							<?php if($flatsome_opt['search_pos'] == 'left'){ ?>
 							<div>
@@ -195,26 +200,26 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>		
+										} ?>
 							</div>
 							<?php } ?>
-							
+
 							<div>
 								<?php echo do_shortcode($flatsome_opt['nav_position_text_top']); ?>
 							</div>
 						</div>
-						
+
 
 						<?php } ?>
 					</div><!-- .left-links -->
 
-					<?php if($flatsome_opt['logo_position'] == 'center') { ?> 
+					<?php if($flatsome_opt['logo_position'] == 'center') { ?>
 					<div id="logo" class="logo-center">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>" rel="home">
 							<?php if($flatsome_opt['site_logo']){
 								$site_title = esc_attr( get_bloginfo( 'name', 'display' ));
 								$logo_class = "";
-								if($flatsome_opt['site_logo_sticky']) {$logo_class = 'has_sticky_logo';} 
+								if($flatsome_opt['site_logo_sticky']) {$logo_class = 'has_sticky_logo';}
 
 								echo '<img src="'.$flatsome_opt['site_logo'].'" class="header_logo '.$logo_class.'" alt="'.$site_title.'"/>';
 								if ( is_page_template( 'page-transparent-header-light.php' )) {
@@ -232,10 +237,10 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 
 					<div class="right-links">
 						<ul <?php if($flatsome_opt['nav_position'] == 'top_right'){ ?>id="site-navigation"<?php } ?> class="header-nav">
-							
+
 						<?php if($flatsome_opt['nav_position'] == 'top_right'){ ?>
 								<?php if ( has_nav_menu( 'primary' ) ) { ?>
-								
+
 								<?php if (!isset($flatsome_opt['search_pos']) || $flatsome_opt['search_pos'] == 'left') { ?>
 								<li class="search-dropdown">
 									<a href="#" class="nav-top-link icon-search" onClick="return false;"></a>
@@ -244,12 +249,12 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>	
+										} ?>
 									</div><!-- .nav-dropdown -->
 								</li><!-- .search-dropdown -->
 								<?php } ?>
 
-									<?php  
+									<?php
 									wp_nav_menu(array(
 										'theme_location' => 'primary',
 										'container'       => false,
@@ -267,11 +272,11 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>		
+										} ?>
 									</div><!-- .nav-dropdown -->
 								</li><!-- .search-dropdown -->
 								<?php } ?>
-		                    <?php } ?>		
+		                    <?php } ?>
 		                   	<?php } // primary-nav right style ?>
 
 							<?php if($flatsome_opt['top_right_text']) { ?>
@@ -281,18 +286,18 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 							<?php } ?>
 
 						<?php if(!$flatsome_opt['catalog_mode']) { ?>
-						
+
 						<?php if(!isset($flatsome_opt['myaccount_dropdown']) || $flatsome_opt['myaccount_dropdown'] == '1') { ?>
 							<li class="account-dropdown hide-for-small">
 								<?php
-								if ( is_user_logged_in() ) { ?> 
+								if ( is_user_logged_in() ) { ?>
 								<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="nav-top-link nav-top-login">
 									<?php _e('My Account', 'woocommerce'); ?>
 								</a>
 								<div class="nav-dropdown">
 									<ul>
 									<?php if ( has_nav_menu( 'my_account' ) ) { ?>
-									<?php  
+									<?php
 									wp_nav_menu(array(
 										'theme_location' => 'my_account',
 										'container'       => false,
@@ -312,7 +317,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 									<?php } ?>
 									</ul>
 								</div><!-- end account dropdown -->
-								
+
 							<?php } else { ?>
 							<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"
 								class="nav-top-link nav-top-not-logged-in"
@@ -322,10 +327,10 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 								<?php _e('Login', 'woocommerce'); ?></a>
 							<?php
 						}
-						?>						
+						?>
 						</li>
 						<?php } // end My account dropdown ?>
-						
+
 					<!-- Show mini cart if Woocommerce is activated -->
 
 					<?php if(!isset($flatsome_opt['show_cart']) || $flatsome_opt['show_cart'] == 1) { ?>
@@ -334,16 +339,16 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 						<div class="cart-inner">
 							<?php // Edit this content in inc/woocommerce/template-tags-global.php. Its gets relpaced with Ajax! ?>
 							<a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="cart-link">
-								<strong class="cart-name hide-for-small"><?php _e('Cart', 'woocommerce'); ?></strong> 
-								<span class="cart-price hide-for-small">/ <?php echo $woocommerce->cart->get_cart_subtotal(); ?></span> 
+								<strong class="cart-name hide-for-small"><?php _e('Cart', 'woocommerce'); ?></strong>
+								<span class="cart-price hide-for-small">/ <?php echo $woocommerce->cart->get_cart_subtotal(); ?></span>
 									<!-- cart icon -->
 									<div class="cart-icon">
-				                        <?php if ($flatsome_opt['custom_cart_icon']){ ?> 
+				                        <?php if ($flatsome_opt['custom_cart_icon']){ ?>
 				                        <div class="custom-cart-inner">
 					                        <div class="custom-cart-count"><?php echo $woocommerce->cart->cart_contents_count; ?></div>
-					                        <img class="custom-cart-icon" alt="<?php _e('Cart', 'woocommerce'); ?>" src="<?php echo $flatsome_opt['custom_cart_icon']?>"/> 
+					                        <img class="custom-cart-icon" alt="<?php _e('Cart', 'woocommerce'); ?>" src="<?php echo $flatsome_opt['custom_cart_icon']?>"/>
 				                        </div><!-- .custom-cart-inner -->
-				                        <?php } else { ?> 
+				                        <?php } else { ?>
 				                         <strong><?php echo $woocommerce->cart->cart_contents_count; ?></strong>
 				                         <span class="cart-icon-handle"></span>
 				                        <?php }?>
@@ -354,8 +359,8 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 								<!-- Add a spinner before cart ajax content is loaded -->
 									<?php if ($woocommerce->cart->cart_contents_count == 0) {
 										echo '<p class="empty">'.__('No products in the cart.','woocommerce').'</p>';
-										?> 
-									<?php } else { //add a spinner ?> 
+										?>
+									<?php } else { //add a spinner ?>
 										<div class="ux-loading"></div>
 									<?php } ?>
 									</div><!-- nav-dropdown-innner -->
@@ -364,7 +369,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 					</li><!-- .mini-cart -->
 					<?php } ?>
 					<?php } ?>
-	
+
 					<?php } else { ?>
 					<li class="html-block">
 						<div class="html-block-inner">
@@ -388,7 +393,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 		<div class="nav-wrapper">
 		<ul id="site-navigation" class="header-nav">
 				<?php if ( has_nav_menu( 'primary' ) ) : ?>
-					<?php  
+					<?php
 					wp_nav_menu(array(
 						'theme_location' => 'primary',
 						'container'       => false,
@@ -406,13 +411,13 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 							get_product_search_form();
 						} else {
 							get_search_form();
-						} ?>	
+						} ?>
 					</div><!-- .nav-dropdown -->
 				</li><!-- .search-dropdown -->
 				<?php } ?>
               <?php else: ?>
                   <li>Define your main navigation in <b>Appearance > Menus</b></li>
-              <?php endif; ?>								
+              <?php endif; ?>
 		</ul>
 		<?php if($flatsome_opt['nav_position'] == 'bottom') { ?>
 		<div class="right hide-for-small">
@@ -426,7 +431,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 											get_product_search_form();
 										} else {
 											get_search_form();
-										} ?>		
+										} ?>
 							</div>
 				<?php } ?>
 			</div>
@@ -440,7 +445,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 </div><!-- .header-wrapper -->
 
 <div id="main-content" class="site-main hfeed <?php echo $flatsome_opt['content_color']; ?>">
-<?php 
+<?php
 //adds a border line if header is white
 if (strpos($flatsome_opt['header_bg'],'#fff') !== false && $flatsome_opt['nav_position'] == 'top') {
 		  echo '<div class="row"><div class="large-12 columns"><div class="top-divider"></div></div></div>';
