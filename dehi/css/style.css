@@ -1,4 +1,3 @@
-@import url("../flatsome/css/foundation.css");
 /*
 Theme Name: Down East Horizons
 Description: This is a child theme for dehi.org
@@ -7,6 +6,7 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 2.0
 */
+@import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* general */
@@ -44,6 +44,17 @@ a.button,
 .row.container {
   margin-bottom: 0px !important;
   padding-bottom: 30px; }
+
+.dehi-menu-button a {
+  background-color: #6ad61d;
+  color: white !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  border-radius: 5px;
+  opacity: 1 !important; }
+
+.dehi-menu-button.active a {
+  color: black !important; }
 
 /* --------- Contact form 7 styling --------------*/
 .wpcf7 .wpcf7-form .row.container {
@@ -174,7 +185,7 @@ body.home.page #main-content {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to top, #7db9e8 0%, #13439b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13439b', endColorstr='#7db9e8',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13439b', endColorstr='#7db9e8',GradientType=0 );
   /* IE6-9 */ }
 
 #dehi-foundation img {
@@ -183,7 +194,7 @@ body.home.page #main-content {
   margin: auto; }
 
 body.page-template-page-foundation #main-content {
-  background-color: white !important; }
+  background-color: #FFF !important; }
 
 #dehi-foundation-side {
   background-color: #fff894;
@@ -283,7 +294,7 @@ footer .footer.footer-1 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #7db9e8 0%, #13439b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#13439b',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#13439b',GradientType=0 );
   /* IE6-9 */ }
   footer .footer.footer-1 .widget.widget_text {
     margin-bottom: 0px; }
