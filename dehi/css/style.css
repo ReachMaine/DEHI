@@ -56,6 +56,27 @@ a.button,
 .dehi-menu-button.active a {
   color: black !important; }
 
+.dehi-green-button a {
+  background-color: #6ad61d;
+  opacity: 1; }
+
+.dehi-blue-button a {
+  background-color: #016DC5;
+  opacity: 1; }
+
+.dehi-rainbow-button a {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dd4d4d+0,c146a1+10,a335d6+26,3692d8+51,70c4ed+65,35d6b6+87,58e539+100 */
+  background: #dd4d4d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #dd4d4d 0%, #c146a1 10%, #a335d6 26%, #3692d8 51%, #70c4ed 65%, #35d6b6 87%, #58e539 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #dd4d4d 0%, #c146a1 10%, #a335d6 26%, #3692d8 51%, #70c4ed 65%, #35d6b6 87%, #58e539 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #dd4d4d 0%, #c146a1 10%, #a335d6 26%, #3692d8 51%, #70c4ed 65%, #35d6b6 87%, #58e539 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4d4d', endColorstr='#58e539',GradientType=1 );
+  /* IE6-9 */ }
+
 /* --------- Contact form 7 styling --------------*/
 .wpcf7 .wpcf7-form .row.container {
   margin-bottom: 0px !important; }

@@ -23,6 +23,7 @@ $dehi-footer-green: #6ad61d; // used on 2nd footer
 $dehi-bright-green: #6ad61d;
 $dehi-med-green-bkgd: #8cd077; // used for calendar day top bar.
 $dehi-light-green-bkgd: #cceed9;
+$dehi-autism-blue: #016DC5;
 $hightlite-light: #f1f1f1;
 
 
@@ -79,4 +80,23 @@ a.button,
     a {
       color: black!important;
     }
+}
+.dehi-green-button a {
+    background-color: $dehi-bright-green;
+    opacity: 1;
+}
+
+.dehi-blue-button a {
+  background-color: $dehi-autism-blue;
+  opacity: 1;
+}
+
+.dehi-rainbow-button a {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dd4d4d+0,c146a1+10,a335d6+26,3692d8+51,70c4ed+65,35d6b6+87,58e539+100 */
+  background: rgb(221,77,77); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(221,77,77,1) 0%, rgba(193,70,161,1) 10%, rgba(163,53,214,1) 26%, rgba(54,146,216,1) 51%, rgba(112,196,237,1) 65%, rgba(53,214,182,1) 87%, rgba(88,229,57,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(221,77,77,1) 0%,rgba(193,70,161,1) 10%,rgba(163,53,214,1) 26%,rgba(54,146,216,1) 51%,rgba(112,196,237,1) 65%,rgba(53,214,182,1) 87%,rgba(88,229,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(221,77,77,1) 0%,rgba(193,70,161,1) 10%,rgba(163,53,214,1) 26%,rgba(54,146,216,1) 51%,rgba(112,196,237,1) 65%,rgba(53,214,182,1) 87%,rgba(88,229,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4d4d', endColorstr='#58e539',GradientType=1 ); /* IE6-9 */
+
 }
