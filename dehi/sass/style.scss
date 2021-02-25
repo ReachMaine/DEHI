@@ -6,13 +6,13 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 2.0
 */
- 
+
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
 @import "partials/cf7";
 @import "partials/tribe-events";
 
- 
+
 /* =Theme customization starts here */
 body {
   background: $body-background;
@@ -37,19 +37,19 @@ body #masthead {
 		> ul.header-nav {  // header navigation
 			padding-top: 30px;
 			> li a {
-				
+
 				text-transform: none;
 			}
 			> li a.nav-top-link {
 				font-size: 100%;
 			}
-			li .nav-dropdown li a { 
+			li .nav-dropdown li a {
 				font-size: 90%;
-			} 
+			}
 		}
-		
+
 	}
-	
+
 }
 .social-icons .icon.icon_facebook {
 	background-color: $facebook_blue;
@@ -63,13 +63,13 @@ body #masthead {
 }
 body {
 	#main-content{
-		background-color: $body-background!important; // default 
+		background-color: $body-background!important; // default
 	}
 }
 body.home.page {
 	#main-content{
 		background-color: $dehi-yellow-bkgd!important;
-	} 
+	}
 }
 
 // homepage stuff
@@ -91,7 +91,7 @@ body.home.page {
 							text-shadow: 1px 2px #7a7a7a;
 						}
 					}
-					
+
 				}
 			}
 		}
@@ -109,8 +109,8 @@ body.home.page {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13439b', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-// foundation page header 
-#dehi-foundation { // page header 
+// foundation page header
+#dehi-foundation { // page header
 	//background-color: red;
 	img {
 		width: 100%;
@@ -152,7 +152,7 @@ body.page-template-page-foundation {
 	margin-bottom: 0px!important;
 }
 #main-content .dehi-content-container {
-	background-color: $site-background; //#fee9c9; 
+	background-color: $site-background; //#fee9c9;
 	>.row.container {
 		background-color: $site-background;;
 		// move beathing room into row (use padding instead of margin)
@@ -203,7 +203,7 @@ body.page-template-page-foundation {
 }
 .columns.dehi-alt-green-bkg,
 .row.dehi-alt-green-bkg,
-.ux-section.boxed.dehi-alt-green-bkg { // background around 
+.ux-section.boxed.dehi-alt-green-bkg { // background around
 	.column-inner {
 		background-color: $dehi-light-green-bkgd!important;
 	}
@@ -242,7 +242,7 @@ h2.reach_post_title { //Styling cancellation titles
 	color: red;
 }
 
-.from_the_blog_comments { // hide comments on blog shortcode 
+.from_the_blog_comments { // hide comments on blog shortcode
 	display: none;
 	visibility: hidden;
 }
@@ -269,12 +269,12 @@ footer .footer.footer-1 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#13439b',GradientType=0 ); /* IE6-9 */
 	.widget.widget_text {
 		margin-bottom: 0px;
-	}	
+	}
 }
-footer .footer.footer2 {
+footer .footer.footer-2 {
 	form .paypal-donations {
 		br {
-			display: none; // not working, but leaving JIC
+			display: none; 
 		}
 	}
 }
@@ -283,5 +283,5 @@ footer .absolute-footer {
 }
 
 /******* these should stay at bottom of this file **********/
-@import "partials/print"; 
+@import "partials/print";
 @import "partials/media";
