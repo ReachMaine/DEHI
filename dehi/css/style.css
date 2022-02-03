@@ -146,9 +146,18 @@ a.button,
 .tribe_events a {
   color: #134b9d; }
 
-.tribe-events-single-section.tribe-events-event-meta {
+.single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta {
+  width: 100%;
   border: 10px solid #b4ea8e;
-  border-radius: 15px; }
+  padding-left: 10px;
+  border-radius: 15px;
+  background-color: #FFFFFF; }
+  .single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group {
+    width: 30%; }
+    .single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group dt {
+      font-weight: bold; }
+  .single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group.tribe-events-meta-group-gmap .tribe-events-venue-map {
+    width: auto; }
 
 /* =Theme customization starts here */
 body {
